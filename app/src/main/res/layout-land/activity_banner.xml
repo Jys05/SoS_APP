@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:onClick="onBack"
+        android:layout_height="40dp"
+        android:src="@mipmap/back2" />
+    
+    <TextView
+        android:id="@+id/helpTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="救命"
+        android:textSize="250dp" />
+
+</RelativeLayout>

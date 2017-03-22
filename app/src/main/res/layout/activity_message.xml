@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDeepBule"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorDeepBule">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:onClick="onBack"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/back2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Message"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/message_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="90dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sos" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help!  Help!"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginBottom="8dp"
+            android:background="#89b1b1b1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Location："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginBottom="5dp"
+            android:background="#89b1b1b1" />
+
+
+        <TextView
+            android:id="@+id/JingDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经度："
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginBottom="5dp"
+            android:background="#89b1b1b1" />
+
+        <TextView
+            android:id="@+id/WeiDu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纬度："
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginBottom="5dp"
+            android:background="#89b1b1b1" />
+
+        <TextView
+            android:id="@+id/Country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="国家："
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginBottom="5dp"
+            android:background="#89b1b1b1" />
+
+        <TextView
+            android:id="@+id/State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省份："
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginBottom="5dp"
+            android:background="#89b1b1b1" />
+
+        <TextView
+            android:id="@+id/City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市："
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginBottom="5dp"
+            android:background="#89b1b1b1" />
+
+        <TextView
+            android:id="@+id/Street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="街道："
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_marginBottom="20dp"
+            android:background="#89b1b1b1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/send"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/message_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="Send"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_white"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

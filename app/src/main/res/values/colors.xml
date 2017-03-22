@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#294569</color>
+    <color name="colorPrimaryDark">#304663</color>
+    <color name="colorAccent">#00ff4081</color>
+
+
+    <color name="colorDeepBule1">#294569</color>
+    <color name="colorDeepBule">#304663</color>
+    <color name="colorDeepBule2">#3b4b60</color>
+    <color name="translucent">#3e172130</color>
+</resources>
